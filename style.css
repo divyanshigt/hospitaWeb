@@ -185,10 +185,10 @@ text-align:center;
 }
 .nav-links {
     display: flex; 
-    justify-content: center; /* Centers the links horizontally */
-    align-items: center; /* Aligns the links vertically */
-    gap: 20px; /* Adds space between links */
-    list-style-type: none; /* Removes bullets if links are in a list */
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -202,16 +202,16 @@ text-align:center;
 
 .nav-links a:hover {
     color: #2bb3bd;
-    border-bottom: 2px solid rgb(11, 99, 132); /* Underline effect on hover */
+    border-bottom: 2px solid rgb(11, 99, 132); 
 }
 
 .logo div {
     width: 100%;
-    max-width: 1200px; /* Prevents content from stretching too wide */
-    margin: 0 auto; /* Centers the container */
-    display: flex; /* Use flexbox to manage layout */
-    justify-content: space-between; /* Space between the logo and links */
-    align-items: center; /* Aligns content vertically */
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 @keyframes showHospitalName {
     0% {
@@ -229,10 +229,10 @@ text-align:center;
 }
 
 #hospital-name {
-    display: inline-block; /* Makes it easier to animate */
-    animation: showHospitalName 3s ease-in-out forwards; /* 3 seconds animation */
-    font-size: 50px; /* Initial size of the font */
-    font-family: forte; /* Ensure consistent font style */
+    display: inline-block;
+    animation: showHospitalName 3s ease-in-out forwards; 
+    font-size: 50px;
+    font-family: forte; 
 }
 .page-container {
     perspective: 1000px;
