@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Divyshakti Hospital </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add styles for page flip */
+        .page-container {
+            perspective: 1000px;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page {
+            width: 70%;
+            height: 80%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+        }
+
+        .page:hover {
+            transform: rotateY(-180deg);
+        }
+
+        .page-front, .page-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        .page-front {
+            background-color: #e8f5f9;
+        }
+
+        .page-back {
+            background-color: #ffffff;
+            transform: rotateY(180deg);
+        }
+
+        .page-content {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .page-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div>
+            Contact Us +91 96222 20000 / 01 | divyshaktihospital@gmail.com
+        </div>
+    </div>
+
+    <div class="logo">
+        <div>
+            <table>
+                <tr>
+                    <td width="600px" style="font-size:50px;font-family:forte;">
+                        <span id="hospital-name">
+                            <span style="color:#428bca">Divyshakti</span>
+                            <span style="color:#000;">Hospital</span>
+                        </span>
+                    </td>
+                    <td>
+                        <div class="nav-links">
+                            <a href="index.html">HOME</a> 
+                            <a href="about.html">ABOUT </a>  
+                            <a href="service.html">SERVICE</a>
+                            <a href="doctor.html">DOCTORS</a> 
+                            <a href="contact.html">CONTACT </a>
+							<a href="appointment.html">APPOINTMENT</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Page flip effect starts here -->
+    <div class="page-container">
+        <div class="page">
+            <!-- Front Side -->
+            <div class="page-front">
+                <div class="page-content">
+                    <div class="page-title">Welcome to Divyshakti Hospital</div>
+                    <p>
+                        Divyshakti Hospitals Enterprise Limited is an Indian multinational hospital chain headquartered
+                        in Chennai, Tamil Nadu, India. It was founded by Arun E in 1983 as the first corporate healthcare
+                        provider in India.
+                    </p>
+                    <p>Hover over this page to flip and learn more about us!</p>
+                </div>
+            </div>
+            <!-- Back Side -->
+            <div class="page-back">
+                <div class="page-content">
+					<img src="https://files.oaiusercontent.com/file-UC1jhKr3DotNoGBua577ug?se=2024-12-25T05%3A11%3A07Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Da4fec6a0-253d-4a3f-a46a-998136ad1954.webp&sig=VPe8j/ZA7FlBTTGPcUPQM2RZMOWbFkyYWGYZ1/2YzQ8%3D" class="page-image">
+                    <div class="page-title">More About Us</div>
+                    <p>
+                        Divyshakti Hospitals has several facilities accredited internationally and domestically. It
+                        also provides telemedicine services to remote locations and has over 4,000 pharmacy outlets in
+                        21 states. We continue to expand our services to cater to your healthcare needs.
+                    </p>
+                    <ul>
+                        <li>Founded in 1983 by Arun E.</li>
+                        <li>First branch inaugurated by President Zail Singh.</li>
+                        <li>Over 4,000 pharmacy outlets across India.</li>
+                        <li>Telemedicine services started in 2000.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav_down">
+        <div>
+            &copy; Divyshakti Hospital, site designed & developed by ARUN
+        </div>
+    </div>
+</body>
+</html>
